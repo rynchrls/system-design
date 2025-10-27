@@ -7,9 +7,9 @@ _A progressive roadmap to strengthen your system design and scalability skills._
 > Goal: Build your foundation — scalability, load balancing, caching, and databases.
 
 ### ✅ 1. Scalability Basics
-- [ ] Understand vertical vs horizontal scaling  
-- [ ] Learn what load balancers do (e.g., Nginx, AWS ELB)  
-- [ ] Compare monolith vs microservices architectures  
+- [x] Understand vertical vs horizontal scaling  
+- [x] Learn what load balancers do (e.g., Nginx, AWS ELB)  
+- [x] Compare monolith vs microservices architectures  
 
 ### ✅ 2. Caching Systems
 - [ ] Study CDN caching vs backend caching (Redis/Memcached)  
