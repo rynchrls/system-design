@@ -12,9 +12,9 @@ _A progressive roadmap to strengthen your system design and scalability skills._
 - [x] Compare monolith vs microservices architectures  
 
 ### ✅ 2. Caching Systems
-- [ ] Study CDN caching vs backend caching (Redis/Memcached)  
-- [ ] Build a simple Redis caching layer for an Express or FastAPI API  
-- [ ] Learn cache invalidation strategies (TTL, write-through, write-behind)  
+- [x] Study CDN caching vs backend caching (Redis/Memcached)  
+- [x] Build a simple Redis caching layer for an Express or FastAPI API  
+- [x] Learn cache invalidation strategies (TTL, write-through, write-behind)  
 
 ### ✅ 3. Database Design
 - [ ] Design a normalized relational schema (e.g., PostgreSQL or MySQL)  
