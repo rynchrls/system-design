@@ -17,9 +17,9 @@ _A progressive roadmap to strengthen your system design and scalability skills._
 - [x] Learn cache invalidation strategies (TTL, write-through, write-behind)  
 
 ### ✅ 3. Database Design
-- [ ] Design a normalized relational schema (e.g., PostgreSQL or MySQL)  
-- [ ] Create a denormalized MongoDB schema for read-heavy systems  
-- [ ] Practice indexing and query optimization  
+- [x] Design a normalized relational schema (e.g., PostgreSQL or MySQL)  
+- [x] Create a denormalized MongoDB schema for read-heavy systems  
+- [x] Practice indexing and query optimization  
 - [ ] Learn replication, sharding, and partitioning concepts  
 
 ### ✅ 4. Networking & Communication
