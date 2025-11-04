@@ -20,7 +20,7 @@ _A progressive roadmap to strengthen your system design and scalability skills._
 - [x] Design a normalized relational schema (e.g., PostgreSQL or MySQL)  
 - [x] Create a denormalized MongoDB schema for read-heavy systems  
 - [x] Practice indexing and query optimization  
-- [ ] Learn replication, sharding, and partitioning concepts  
+- [x] Learn replication, sharding, and partitioning concepts  
 
 ### ✅ 4. Networking & Communication
 - [ ] Understand HTTP vs WebSocket vs gRPC  
