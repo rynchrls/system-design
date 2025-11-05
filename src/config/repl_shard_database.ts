@@ -1,35 +1,35 @@
 import { MongoClient, type Db, type TransactionOptions } from "mongodb";
-import { MONGO_DB, MONGO_URI } from "../config.js";
+import { REPL_SHARD_DB, REPL_SHARD_URI } from "../config.js";
 
 
 let db: Db;
 let mongoClient: MongoClient;
 
-export const connectToMongo = async () => {
-  const client = new MongoClient(MONGO_URI, { maxPoolSize: 10, maxIdleTimeMS: 60000, connectTimeoutMS: 60000 });
+export const connectToMongoReplShard = async () => {
+  const client = new MongoClient(REPL_SHARD_URI, { maxPoolSize: 10, maxIdleTimeMS: 60000, connectTimeoutMS: 60000 });
 
   try {
     mongoClient = await client.connect();
-    db = mongoClient.db(MONGO_DB);
-    return Promise.resolve("Connected to MongoDB.");
+    db = mongoClient.db(REPL_SHARD_DB);
+    return Promise.resolve("Connected to MongoDB Replication Shard.");
   } catch (error) {
     return Promise.reject("Failed to connect to MongoDB.");
   }
 };
 
-export const getDB = () => {
+export const getDBREPLSHARD = () => {
   if (!db) {
     throw new Error("Database not connected!");
   }
   return db;
 };
 
-export const useMongoClient = () => {
+export const useMongoClientReplShard = () => {
   return mongoClient;
 };
 
 export const useTransactionOptions: TransactionOptions = {
-  readPreference: "secondaryPreferred",
+  readPreference: "secondary",
   readConcern: { level: "local" },
   writeConcern: { w: "majority" },
 };

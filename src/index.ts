@@ -4,6 +4,7 @@ import { PORT } from "./config.js";
 import { connectToMongo } from "./config/database.js";
 import router from "./routes/index.js";
 import jobs from "./jobs.js";
+import { connectToMongoReplShard } from "./config/repl_shard_database.js";
 
 const app = express();
 // ✅ Must be here BEFORE routes
@@ -17,14 +18,21 @@ app.get("/", (req: Request, res: Response) => {
 connectToMongo()
   .then((message) => {
     console.log(message);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+connectToMongoReplShard()
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
 jobs();
 
-app.use('/api/v1', router)
+app.use("/api/v1", router);
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });

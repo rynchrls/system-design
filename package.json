@@ -10,7 +10,8 @@
     "build": "tsc",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
-    "format": "prettier --write 'src/**/*.{ts,tsx,json,md}'"
+    "format": "prettier --write 'src/**/*.{ts,tsx,json,md}'",
+    "init:shard": "node --loader ts-node/esm scripts/init-sharding.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.18.0",
