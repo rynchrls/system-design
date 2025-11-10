@@ -23,9 +23,9 @@ _A progressive roadmap to strengthen your system design and scalability skills._
 - [x] Learn replication, sharding, and partitioning concepts  
 
 ### ✅ 4. Networking & Communication
-- [ ] Understand HTTP vs WebSocket vs gRPC  
-- [ ] Implement a simple REST API and WebSocket server  
-- [ ] Study connection pooling and keep-alive concepts  
+- [x] Understand HTTP vs WebSocket vs gRPC  
+- [x] Implement a simple REST API and WebSocket server  
+- [x] Study connection pooling and keep-alive concepts  
 
 ---
 
