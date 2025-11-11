@@ -12,8 +12,8 @@ export const connectToMongo = async () => {
     mongoClient = await client.connect();
     db = mongoClient.db(MONGO_DB);
     return Promise.resolve("Connected to MongoDB.");
-  } catch (error) {
-    return Promise.reject("Failed to connect to MongoDB.");
+  } catch (error: any) {
+    return Promise.reject(error.message);
   }
 };
 

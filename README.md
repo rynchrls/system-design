@@ -33,8 +33,8 @@ _A progressive roadmap to strengthen your system design and scalability skills._
 > Goal: Apply concepts to design realistic small systems.
 
 ### ✅ 5. URL Shortener System (Like Bit.ly)
-- [ ] Design schema (short code ↔ original URL)  
-- [ ] Add Redis caching for quick redirects  
+- [x] Design schema (short code ↔ original URL)  
+- [x] Add Redis caching for quick redirects  
 - [ ] Handle high read traffic using CDN or reverse proxy  
 - [ ] Implement analytics (click counts, top URLs)  
 

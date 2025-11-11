@@ -13,7 +13,7 @@ export const connectToMongoReplShard = async () => {
     db = mongoClient.db(REPL_SHARD_DB);
     return Promise.resolve("Connected to MongoDB Replication Shard.");
   } catch (error) {
-    return Promise.reject("Failed to connect to MongoDB.");
+    return Promise.reject("Failed to connect to MongoDB Replica.");
   }
 };
 
