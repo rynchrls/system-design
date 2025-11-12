@@ -35,8 +35,8 @@ _A progressive roadmap to strengthen your system design and scalability skills._
 ### ✅ 5. URL Shortener System (Like Bit.ly)
 - [x] Design schema (short code ↔ original URL)  
 - [x] Add Redis caching for quick redirects  
-- [ ] Handle high read traffic using CDN or reverse proxy  
-- [ ] Implement analytics (click counts, top URLs)  
+- [x] Handle high read traffic using CDN or reverse proxy  
+- [x] Implement analytics (click counts, top URLs)  
 
 ### ✅ 6. Rate Limiter
 - [ ] Implement a sliding window or token bucket algorithm using Redis  
