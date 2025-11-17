@@ -1,6 +1,7 @@
-import RedisClient from '../config/redis.js';
 
-const redis = new RedisClient().redis;
+import { REDIS } from '../config.js';
+
+const redis = REDIS
 
 export const setCache = async (key: string, data: any, ttlSeconds = 60) => {
   const jsonData = JSON.stringify(data);

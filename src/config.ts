@@ -1,4 +1,5 @@
 import dotenv from "dotenv"
+import RedisClient from "./config/redis.js"
 
 dotenv.config({path: `.env.${process.env.NODE_ENV || "dev"}`})
 
@@ -9,3 +10,4 @@ export const MONGO_URI = (process.env.MONGO_URI || "mongodb://localhost:27017/")
 export const MONGO_DB = (process.env.MONGO_DB || "system_design_dev")  as string
 export const REPL_SHARD_URI = (process.env.REPL_SHARD_URI || "mongodb://localhost:27024/")  as string
 export const REPL_SHARD_DB = (process.env.REPL_SHARD_DB || "system_design_shard_dev")  as string
+export const REDIS = new RedisClient().redis

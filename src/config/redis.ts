@@ -12,4 +12,4 @@ export default class RedisClient {
     this.redis.on("connect", () => console.log("✅ RedisClient connected"));
     this.redis.on("error", (err: any) => console.error("❌ RedisClient error:", err.message));
   }
-}
+} 

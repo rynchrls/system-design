@@ -39,9 +39,9 @@ _A progressive roadmap to strengthen your system design and scalability skills._
 - [x] Implement analytics (click counts, top URLs)  
 
 ### ✅ 6. Rate Limiter
-- [ ] Implement a sliding window or token bucket algorithm using Redis  
-- [ ] Add middleware for rate limiting (Express or FastAPI)  
-- [ ] Log rate-limited requests and analyze performance  
+- [x] Implement a sliding window or token bucket algorithm using Redis  
+- [x] Add middleware for rate limiting (Express or FastAPI)  
+- [x] Log rate-limited requests and analyze performance  
 
 ### ✅ 7. Notification / Pub-Sub System
 - [ ] Use Redis Pub/Sub to simulate events (e.g., “user signup → send email”)  

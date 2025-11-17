@@ -3,10 +3,10 @@ import { getDB } from "../config/database.js";
 import { setCache, getCache, deleteCache } from "../utils/cache.utils.js";
 import { convertToObjectId } from "../utils/convertToObjectId.util.js";
 import crypto from "crypto";
-import redisClient from "../config/redis.js";
 import type { Order } from "../types/order.type.js";
+import { REDIS } from "../config.js";
 
-const redis = new redisClient().redis;
+const redis = REDIS
 
 export default class RedisRepo {
   static collection() {

@@ -3,9 +3,9 @@ import { getDB } from "../config/database.js";
 import { ShortUrl, type IShortUrl } from "../models/urlShortener.model.js";
 import { randomShortCodeNode } from "../utils/randomShortcode.util.js";
 import { getCache, setCache } from "../utils/cache.utils.js";
-import RedisClient from "../config/redis.js";
+import { REDIS } from "../config.js";
 
-const redis = new RedisClient().redis;
+const redis = REDIS
 
 export class UrlShortnerRepo {
   static collection() {

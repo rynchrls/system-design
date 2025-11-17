@@ -1,12 +1,12 @@
 import { cronJobScheduledUtil } from "./utils/cron-job.util.js";
-import RedisClient from "./config/redis.js";
 import { getDB } from "./config/database.js";
 import type { Order } from "./types/order.type.js";
 import { convertToObjectId } from "./utils/convertToObjectId.util.js";
 import { ObjectId } from "mongodb";
 import { UrlShortnerRepo } from "./repos/urlShortener.repo.js";
+import { REDIS } from "./config.js";
 
-const redis = new RedisClient().redis;
+const redis = REDIS
 
 export default async () => {
   async function flushClickCounters() {
